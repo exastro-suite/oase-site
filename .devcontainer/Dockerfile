@@ -21,4 +21,4 @@ RUN curl -k https://raw.githubusercontent.com/thoughtworks/talisman/master/globa
 RUN set -eux && \
     mkdir -p /workspace
 
-WORKDIR /workspace/oase-docs
+WORKDIR /workspace

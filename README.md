@@ -31,9 +31,6 @@
    # oase-site のフォークリポジトリをクローンする
    cd ~/${MY_GITHUB_ACCOUNT}
    git clone https://github.com/${MY_GITHUB_ACCOUNT}/oase-site.git
-
-   # リポジトリの所有者を変更する
-   chown -R 1000:1000 ~/${MY_GITHUB_ACCOUNT}/oase-site
    ```
 3. oase-docs と docs リポジトリをサブモジュールとしてクローンする
    ```bash
@@ -43,6 +40,7 @@
 
    # リモートリポジトリと動機
    git submodule sync
+   git submodule update --init --recursive
    ```
 
 ## ドキュメントの作成・更新
