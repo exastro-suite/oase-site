@@ -40,7 +40,7 @@
 
    # リモートリポジトリと動機
    git submodule sync
-   git submodule update --init --recursive
+   git submodule foreach git pull
    ```
 
 ## ドキュメントの作成・更新
@@ -60,3 +60,7 @@
 - lextudio.restructuredtext-pack
 - trond-snekvik.simple-rst
 - searKing.preview-vscode
+
+## 画面確認
+
+http://127.0.0.1:8000
