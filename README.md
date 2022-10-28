@@ -31,9 +31,6 @@
    # oase-site のフォークリポジトリをクローンする
    cd ~/${MY_GITHUB_ACCOUNT}
    git clone https://github.com/${MY_GITHUB_ACCOUNT}/oase-site.git
-
-   # リポジトリの所有者を変更する
-   chown -R 1000:1000 ~/${MY_GITHUB_ACCOUNT}/oase-site
    ```
 3. oase-docs と docs リポジトリをサブモジュールとしてクローンする
    ```bash
@@ -43,6 +40,7 @@
 
    # リモートリポジトリと動機
    git submodule sync
+   git submodule foreach git pull
    ```
 
 ## ドキュメントの作成・更新
@@ -62,3 +60,7 @@
 - lextudio.restructuredtext-pack
 - trond-snekvik.simple-rst
 - searKing.preview-vscode
+
+## 画面確認
+
+http://127.0.0.1:8000
